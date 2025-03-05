@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>FastAPI MSAL Authentication</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+    <h1>Welcome to the FastAPI MSAL Authentication Example!</h1>
+
+{% if user_full_name %}
+        <p>Logged in as: {{ user_full_name }} ({{ user_email }})</p>
+        <p><a href="/logout">Logout</a></p>
+    {% else %}
+        <p>You are not logged in.</p>
+        <p><a href="/login">Login with Microsoft</a></p>
+    {% endif %}
+</main>
+
+</body>
+</html>

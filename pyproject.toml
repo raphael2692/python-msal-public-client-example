@@ -1,0 +1,22 @@
+[project]
+name = "python-msal-public-client-example"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "raphael2692"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "msal (>=1.31.1,<2.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "pydantic (>=2.10.6,<3.0.0)",
+    "fastapi (>=0.115.11,<0.116.0)",
+    "uvicorn (>=0.34.0,<0.35.0)",
+    "python-decouple (>=3.8,<4.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
